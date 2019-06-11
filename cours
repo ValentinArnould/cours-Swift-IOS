@@ -1,0 +1,61 @@
+Swift : langage compilé d'applications IOS
+
+Langage typé (ressemble au c++)
+nécessite Xcode comme IDE officiel
+
+func Name(with arg: String) -> String {
+print(arg)
+return otherFunc()
+}
+
+obj1 = structAvecName
+obj2 = obj1
+obj2 sera une copie de obj1
+si obj1 = classAvecName
+obj2 sera un pointeur sur obj1
+
+var variable = "type auto"
+
+var vari: Type = "type choisi"
+
+enum variable {
+    case valeur(value: Int)
+    case none
+}
+définit une variable pouvant être nulle
+
+ternaire:
+var variable: condition? {
+    if condition {
+
+    }
+    else {
+
+    }
+}
+
+switch variable {
+case .param1:
+print("param1")
+case .param2:
+print("param2")
+}
+permet d'utiliser les arguments d'un enum
+
+private func nomDeFunc(_ argument: String) {} Le tiret permet
+de ne pas avoir à nommer les arguments lors de l'appel de la fonction
+
+
+Utilisation d’un storyboard dans Xcode (permet de faire des applis téléphone)
+Storyboard permet de générer des vues d’application avec texte et éléments
+On peut régler des contraintes avec ctrl (pas commande) en cliquant sur l’objet et en glissant sur l’écran (alignements)
+Pour changer les propriétés d’un objet, utiliser l’icône carrée à droite de la barre zoom
+utiliser un fichier type cocotouch pour crée une class
+
+cliquer sur les deux anneaux en haut à droite pour split l’écran vue/code
+
+@IBOutlet weak var titleLabel: UILabel! (permet de définir une variable dans une classe)
+Se relie avec ctrl clic entre l’élément et la variable
+
+Le JSON utilise Les classes comme modèle de conversion (du JSON vers une classe contenant les clés nécessaires)
+Convertir une url vers du contenu binaire (grâce URLSession), et l’utiliser dans une classe UIImage
